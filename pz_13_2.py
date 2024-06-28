@@ -1,8 +1,10 @@
 # Если в матрице имеются положительные элементы, то вывести TRUE,
 # иначе FALSE
 
-matrix = [[-7, -8, -9], [-4, 2, -6], [-7, -8, -9]]
+import random
 
+matrix = [[random.randint(-7, 2) for i in range(3)] for j in range(3)]
+print(matrix)
 
 def trueorfalse(x):
     for i in x:
